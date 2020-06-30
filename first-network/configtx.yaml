@@ -352,7 +352,7 @@ Profiles:
             SampleConsortium:
                 Organizations:
                     - *Org1
-                    - *Org2
+                    # - *Org2
     TwoOrgsChannel:
         Consortium: SampleConsortium
         <<: *ChannelDefaults
@@ -360,7 +360,7 @@ Profiles:
             <<: *ApplicationDefaults
             Organizations:
                 - *Org1
-                - *Org2
+                # - *Org2
             Capabilities:
                 <<: *ApplicationCapabilities
 
