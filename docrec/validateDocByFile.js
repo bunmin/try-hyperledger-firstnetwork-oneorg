@@ -54,9 +54,6 @@ async function main() {
         const gateway = new Gateway();
         // await gateway.connect(ccp, { wallet, identity: user, discovery: { enabled: false } });
         await gateway.connect(ccp, { wallet, identity: user, discovery: { enabled: true, asLocalhost: true } });
-        console.log(gateway);
-        
-        return ;
 
         // Get the network (channel) our contract is deployed to.
         const network = await gateway.getNetwork('mychannel');
